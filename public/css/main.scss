@@ -1,0 +1,243 @@
+@import "themes/default/variables";
+
+@import "lib/bootstrap/bootstrap";
+@import "lib/bootstrap-social";
+@import "lib/font-awesome/font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300,300italic);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+
+@import "themes/default/default";
+
+// Scaffolding
+// -------------------------
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+  font-family: "Avenir", helvetica,arial,sans-serif;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+body {
+  padding-top: 0px;
+  margin-bottom: 75px;
+  background: #f9f9f9;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+
+  p, ul {
+    margin-bottom: 0;
+  }
+}
+
+.container {
+  max-width: 900px;
+}
+
+// Input Fields
+// -------------------------
+
+textarea {
+  resize: vertical;
+}
+
+// Navbar
+// -------------------------
+
+.navbar-nav img {
+  width: 30px;
+  height: 30px;
+  margin: -15px 15px -15px;
+}
+.navbar-default .navbar-text {
+  color: #666;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+  color: #252525;
+}
+
+// Alerts
+// -------------------------
+
+.alert {
+  margin-top: 20px;
+}
+
+// Thumbnails
+// -------------------------
+
+.thumbnail {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0 5px #ccc, inset 0 0 0 #000;
+}
+
+// Login form
+// -------------------------
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+// Spinner
+// -------------------------
+
+.spinner {
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  font-size: 10px;
+  display: inline-block;
+}
+
+.spinner > div {
+  background-color: #fff;
+  height: 100%;
+  width: 4px;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+// Panels
+// -------------------------
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.05);
+}
+.panel.panel-default {
+  border-color: #e6e6e6;
+}
+
+// posts
+// -------------------------
+
+.cj-post {
+  display: block;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 1.1rem;
+
+  .cj-post-body {
+    padding: 18px 0 14px 0;
+  }
+  .media-left, .media > .pull-left {
+    padding-right: 18px;
+  }
+}
+.cj-post:first-child {
+  border-top: 1px solid #e6e6e6;
+}
+
+// Voting blocks
+// -------------------------
+
+.voter {
+  color: #999;
+  .fa.upvote, .fa.downvote {
+    cursor: pointer
+  }
+  .fa.active {
+    color: #111;
+  }
+  .count {
+    color: #333;
+  }
+}
+
+.post-options {
+  margin-bottom: 10px;
+
+  .nav {
+    display: inline-block;
+  }
+}
